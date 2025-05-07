@@ -1,0 +1,38 @@
+┌────────────┐
+│   User     │
+├────────────┤
+│ id         │ PK
+│ name       │
+│ email      │ UNIQUE
+│ created_at │
+└────┬───────┘
+     │ 1
+     │
+     │
+     ▼
+┌────────────┐
+│   Post     │
+├────────────┤
+│ id         │ PK
+│ userId     │ FK → User(id)
+│ title      │ UNIQUE
+│ body       │
+│ created_at │
+└────────────┘
+
+┌────────────┐
+│   Log      │
+├────────────┤
+│ id         │ PK
+│ event_type │
+│ created_at │
+└────────────┘
+
+┌────────────┐
+│   Error    │
+├────────────┤
+│ id         │ PK
+│ message    │
+│ raw_data   │
+│ created_at │
+└────────────┘

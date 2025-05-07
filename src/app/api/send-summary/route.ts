@@ -11,7 +11,6 @@ type SummaryPayload = {
 export async function POST(req: Request) {
   try {
     const body: SummaryPayload = await req.json();
-
     const emailText = `
 Resumo diário - ${body.date}
 
