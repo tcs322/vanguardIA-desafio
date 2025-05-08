@@ -9,8 +9,8 @@ Este projeto integra uma aplicação **Next.js** com o serviço de automação *
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
+git clone git@github.com:tcs322/vanguardIA-desafio.git
+cd vanguardIA-desafio
 ```
 
 ### 2. Instale as dependências
@@ -119,6 +119,7 @@ Configure as credenciais SMTP no `.env`.
 Os arquivos `.json` dos workflows estão disponíveis em `/workflows`.
 
 Para importar no n8n:
+
 1. Clique no botão **Workflows** no canto superior esquerdo
 2. Selecione **Import workflow**
 3. Cole o conteúdo do arquivo `.json` ou envie o arquivo
